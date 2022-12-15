@@ -2,7 +2,7 @@ bst260finalproject
 ================
 2022-12-11
 
-## Introduction
+### Introduction
 
 China’s growing aging population can be seen as a threat to the
 country’s healthcare system by pushing the government to shift their
