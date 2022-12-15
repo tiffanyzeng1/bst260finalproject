@@ -1,12 +1,22 @@
 ---
-title: "tab1"
+title: "References and Appendix"
 output: html_document
-date: "2022-12-13"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-This is tab 1
+### References
+
+Kennedy, B. K., Berger, S. L., Brunet, A., Campisi, J., Cuervo, A. M., Epel, E. S., ... & Sierra, F. (2014). Aging: a common driver of chronic diseases and a target for novel interventions. Cell, 159(4), 709.
+
+Vos, T., Lim, S. S., Abbafati, C., Abbas, K. M., Abbasi, M., Abbasifard, M., ... & Bhutta, Z. A. (2020). Global burden of 369 diseases and injuries in 204 countries and territories, 1990–2019: a systematic analysis for the Global Burden of Disease Study 2019. The Lancet, 396(10258), 1204-1222.
+
+Shanghai Bureau of Statistics (2011). Shanghai statistical yearbook. SSB, Shanghai http://wwwstats-shgovcn/tjnj/nj11htm.
+
+### Appendix: All code for this report
+
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+```
+
