@@ -3,7 +3,7 @@ bst260finalproject
 
 # BST 260 Final Project
 
-## Factors Associated with Healthcare Utilization Among Elderly in Shanghai, China
+## Factors Associated with Chronic Condition Diagnoses Among Elderly in Shanghai, China
 
 ### Introduction
 
