@@ -1,6 +1,9 @@
 bst260finalproject
 ================
-2022-12-11
+
+# BST 260 Final Project
+
+## Factors Associated with Healthcare Utilization Among Elderly in Shanghai, China
 
 ### Introduction
 
@@ -44,7 +47,7 @@ study is publicly available and sourced from a cross-sectional study
 that developed a questionnaire used for face-to-face interviews
 conducted in June and August 2011 among Shanghai’s 18 districts.
 
-## Results
+### Results
 
 To begin the analysis, we are going to load the dataset:
 
