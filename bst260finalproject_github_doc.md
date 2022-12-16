@@ -521,7 +521,7 @@ the Global Burden of Disease Study 2019. The Lancet, 396(10258),
 Shanghai Bureau of Statistics (2011). Shanghai statistical yearbook.
 SSB, Shanghai <http://wwwstats-shgovcn/tjnj/nj11htm>.
 
-### Appendix: All code for this report
+### Appendix
 
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
