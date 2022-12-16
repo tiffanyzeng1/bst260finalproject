@@ -486,27 +486,37 @@ Because the “lonely” variable has consistently shown to be significant,
 I wanted to do a chi-squared test between “chronic” and “lonely” to
 validate that an elderly person experiencing loneliness is a significant
 indicator to whether they are diagnosed by chronic conditions. Because p
-\< 0.05, it is in fact significant.
+\< 0.05, it is in fact significant. \### Conclusion The research
+question of this study is to explore the effect of different factors on
+developing chronic conditions among the elderly population in China. The
+results showed the impact of economic status, health status, demographic
+and social characteristics on developing chronic conditions. The most
+surprising finding was that loneliness was a significant indicator of
+whether an elderly person develops chronic conditions, pointing towards
+the shift in Chinese culture where traditionally, children would
+eventually become the main caretakers of their parents. However, the
+Only-Child Policy in China has impacted this tradition as parents
+increasingly encourage their children to pursue their careers and not
+worry about their health, causing many children to not return to their
+families as often as they would if each family was still able to raise
+more children. This policy has proven to be devastating and burdening on
+China’s health system as doctors are pushed to see more patients.
 
-### Conclusion
-
-The research question of this study is to explore the effect of
-different factors on developing chronic conditions among the elderly
-population in China. The results showed the impact of economic status,
-health status, demographic and social characteristics on developing
-chronic conditions. The most surprising finding was that loneliness was
-a significant indicator of whether an elderly person develops chronic
-conditions, pointing towards the shift in Chinese culture where
-traditionally, children would eventually become the main caretakers of
-their parents. However, the Only-Child Policy in China has impacted this
-tradition as parents increasingly encourage their children to pursue
-their careers and not worry about their health, causing many children to
-not return to their families as often as they would if each family was
-still able to raise more children. This policy has proven to be
-devastating and burdening on China’s health system as doctors are pushed
-to see more patients.
-
-### References
+This preliminary analysis gives us a high-level understanding of how
+several factors contribute towards the health status of the elderly
+population in China. Although this analysis was successful given the
+parameters of the dataset, I would ideally want a more comprehensive
+dataset of all the provinces in China to gain a better understanding of
+elderly rural vs urban health statuses. By further disaggregating the
+data into different provinces, we would most likely see a large
+disparity between the health status of minority groups vs the majority
+Han ethnicity, and therefore would see a greater significance in our
+results after running the appropriate regressions. I would also like to
+further investigate how the “lonely” factor contributes to the
+increasing NCD burden among the elderly population to better inform
+policies and initiatives to help integrate elderly people into society,
+whether it be through volunteering or outdoor group activities. \###
+References
 
 Kennedy, B. K., Berger, S. L., Brunet, A., Campisi, J., Cuervo, A. M.,
 Epel, E. S., … & Sierra, F. (2014). Aging: a common driver of chronic
@@ -519,9 +529,7 @@ the Global Burden of Disease Study 2019. The Lancet, 396(10258),
 1204-1222.
 
 Shanghai Bureau of Statistics (2011). Shanghai statistical yearbook.
-SSB, Shanghai <http://wwwstats-shgovcn/tjnj/nj11htm>.
-
-### Appendix
+SSB, Shanghai <http://wwwstats-shgovcn/tjnj/nj11htm>. \### Appendix
 
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
