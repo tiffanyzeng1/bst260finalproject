@@ -1,7 +1,5 @@
-bst260finalproject
+BST 260 Final Project
 ================
-
-# BST 260 Final Project
 
 ## Factors Associated with Chronic Condition Diagnoses Among Elderly in Shanghai, China
 
@@ -51,7 +49,7 @@ conducted in June and August 2011 among Shanghai’s 18 districts.
 
 To begin the analysis, we are going to load the dataset:
 
-### Load Dataset
+#### Load Dataset
 
 ``` r
 library(haven)
@@ -107,7 +105,7 @@ We see that some of the variables are either spelled or labeled
 incorrectly, therefore we need to recode these variables before
 beginning our analysis.
 
-### Rename Variables
+#### Rename Variables
 
 ``` r
 colnames(data)[8] = "insurance"
@@ -135,7 +133,7 @@ not have chronic conditions as “0”. Additionally, we are creating a
 “marry” variable. Lastly, we are generating a second gender and age
 variable to easily identify their categories.
 
-### Convert Variable Types/Generate Variables
+#### Convert Variable Types/Generate Variables
 
 ``` r
 class(data$gender)
@@ -160,7 +158,7 @@ data$married <- ifelse(data$marry == 3, 1, 0)
 data$never_married <- ifelse(data$marry == 1 & 2, 1, 0)
 ```
 
-### Summarize Variables
+#### Summarize Variables
 
 ``` r
 data |>
@@ -241,7 +239,7 @@ to manipulate variables that are specific to this analysis. The original
 dataset had many errors that would not have allowed for appropriate
 analyses.
 
-### Linear Regression
+#### Linear Regression
 
 ``` r
 m1 <- lm(chronic ~ gender + age + married + never_married + race + education + children + livingstatus + insurance + pension_income + location + lonely + smoking + drink, 
@@ -291,7 +289,7 @@ regression. We see that the “location” variable is significant at the
 0.05 level, and the “lonely” variable is significant at the 0.0001
 level.
 
-### Logistic Regression
+#### Logistic Regression
 
 ``` r
 m2 <- glm(chronic ~ gender + age + married + never_married + race + education + children + livingstatus + insurance + pension_income + location + lonely + smoking + drink, 
@@ -348,7 +346,7 @@ also see that the “location” variable is significant at the 0.1 level,
 the “age” and “insurance” variables are significant at the 0.05 level,
 and the “lonely” variable is significant at the 0.0001 level.
 
-### Poisson Test
+#### Poisson Test
 
 ``` r
 m3 <- glm(chronic ~ gender + age + married + never_married + race + education + children + livingstatus + insurance + pension_income + location + lonely + smoking + drink, 
@@ -471,7 +469,7 @@ Although a Poisson model would not be too informative for this analysis,
 I wanted to explore whether the “lonely” variable was still significant
 in this context, which it is.
 
-### Chi-squared Test
+#### Chi-squared Test
 
 ``` r
 chisq <- chisq.test(data$chronic, data$lonely)
@@ -490,7 +488,7 @@ validate that an elderly person experiencing loneliness is a significant
 indicator to whether they are diagnosed by chronic conditions. Because p
 \< 0.05, it is in fact significant.
 
-## Conclusion
+### Conclusion
 
 The research question of this study is to explore the effect of
 different factors on developing chronic conditions among the elderly
@@ -508,7 +506,7 @@ still able to raise more children. This policy has proven to be
 devastating and burdening on China’s health system as doctors are pushed
 to see more patients.
 
-## References
+### References
 
 Kennedy, B. K., Berger, S. L., Brunet, A., Campisi, J., Cuervo, A. M.,
 Epel, E. S., … & Sierra, F. (2014). Aging: a common driver of chronic
@@ -523,7 +521,7 @@ the Global Burden of Disease Study 2019. The Lancet, 396(10258),
 Shanghai Bureau of Statistics (2011). Shanghai statistical yearbook.
 SSB, Shanghai <http://wwwstats-shgovcn/tjnj/nj11htm>.
 
-## Appendix: All code for this report
+### Appendix: All code for this report
 
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
